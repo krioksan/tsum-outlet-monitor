@@ -1,0 +1,16 @@
+name: TSUM Monitor Test
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "*/30 * * * *"
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Test
+        run: |
+          echo "TSUM monitor is working!"
+          date
